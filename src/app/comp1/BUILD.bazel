@@ -1,0 +1,12 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@npm_angular_bazel//:index.bzl", "ng_module")
+
+ng_module(
+    name = "comp1",
+    srcs = ["comp1.component.ts"],
+    assets = ["comp1.component.html", "comp1.component.css"],
+    deps = [
+        "@npm//@angular/core",
+    ]
+)
